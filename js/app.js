@@ -108,7 +108,7 @@ for (var a = 0; a<6; a++){
         for (var i =0; i<3; i++){   
         console.log("i " + i )
         //comparison logic 
-        if (cities == correct[i]){
+        if (cities === correct[i]){
             console.log("correct answer")
             alert("Great guess, that is correct!");
             //if input is correct, "index" set to 4 to exit out of iterating through correct answers, "a" set to 6 to stop from asking for anymore guesses
@@ -149,7 +149,7 @@ if ((q5_norm === "yes") || (q5_norm === "y")){
     overall++  
 }
 
-if((cities == "Seattle") || (cities == "Ann Arbor") || (cities == "Washington DC")){
+if((cities === "Seattle") || (cities === "Ann Arbor") || (cities === "Washington DC")){
     alert("Thank you " + name + ", for your responses and playing the guessing games! You got " + overall + " questions right!");
 }else {
         alert("Sorry, you have exceeded the max number of guesses, the possibles answers were: " + correct[0]+ ", " + correct[1] + ", " + correct[2])
