@@ -79,31 +79,34 @@ var question5 = q5();
 //loop with 4 tries only to guess a number
 
 //set answer
-var answer = 10;
-
-for (var i = 0; i<4; i++){
-    var guess = prompt("Hello " + name + ", please guess the number 1-10 that I am thinking of?");
-        
-    //correct guess
-    if (guess == answer){
-    alert("Great guess, that is correct!");
-    overall++
-    break
-
-    //not correct guess- too high
-    }else if (guess > answer){ 
-    alert("Nice guess, but that guess is too high, please try again");
+function q6() {
+    var answer = 10;
     
-    //not correct guess -too low
-    }else 
-    alert("Nice guess, but that guess too low, please try again");
-   
+    for (var i = 0; i<4; i++){
+        var guess = prompt("Hello " + name + ", please guess the number 1-10 that I am thinking of?");
+            
+        //correct guess
+        if (guess == answer){
+        alert("Great guess, that is correct!");
+        overall++
+        break
+    
+        //not correct guess- too high
+        }else if (guess > answer){ 
+        alert("Nice guess, but that guess is too high, please try again");
+        
+        //not correct guess -too low
+        }else 
+        alert("Nice guess, but that guess too low, please try again");
+       
+    }
+    //if max guesses are exceeded, output msg and correct answer:
+    if (guess != answer){
+    alert("Sorry, you have exceeded the max number of guesses, the number I was thinking of was " + answer);
+    }else {
+    }
 }
-//if max guesses are exceeded, output msg and correct answer:
-if (guess != answer){
-alert("Sorry, you have exceeded the max number of guesses, the number I was thinking of was " + answer);
-}else {
-}
+var question6 = q6();
 
 //loop with 6 tries to guess multiple correct answers
 
