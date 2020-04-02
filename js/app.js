@@ -47,16 +47,19 @@ function q3() {
 }
 var question3 = q3();
 
-var q4 = prompt("Hello " + name + ", does James have any allergies? Please enter either yes/no or y/n");
-var q4_norm = q4.toLowerCase()
-if ((q4_norm === "y" ) || (q4_norm === "n")||(q4_norm === "yes")||(q4_norm === "no")){
-    //console.log(q4_norm);
-    alert(q4_norm + " is an acceptable response");
-} else{
-    //console.log(q4 + " is an unacceptable response.");
-    alert(q4 + " is an unacceptable response, goodbye!");
-    end;
+function q4() {
+    var q4 = prompt("Hello " + name + ", does James have any allergies? Please enter either yes/no or y/n");
+    var q4_norm = q4.toLowerCase()
+    if ((q4_norm === "y" ) || (q4_norm === "n")||(q4_norm === "yes")||(q4_norm === "no")){
+        //console.log(q4_norm);
+        alert(q4_norm + " is an acceptable response");
+    } else{
+        //console.log(q4 + " is an unacceptable response.");
+        alert(q4 + " is an unacceptable response, goodbye!");
+        end;
+    }
 }
+var question4 = q4();
 
 var q5 = prompt("Hello " + name + ", does James work at Amazon? Please enter either yes/no or y/n");
 var q5_norm = q5.toLowerCase()
