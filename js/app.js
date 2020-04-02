@@ -152,19 +152,19 @@ var question7 = q7();
 
 
 // calculate the number of correct answers out of the seven questions asked
-if ((q1_norm === "yes") || (q1_norm === "y")){
+if ((question1 === "yes") || (question1 === "y")){
     overall++  
 }
-if ((q2_norm === "yes") || (q2_norm === "y")){
+if ((question2 === "yes") || (question2 === "y")){
     overall++  
 }
-if ((q3_norm === "yes") || (q3_norm === "y")){
+if ((question3 === "yes") || (question3 === "y")){
     overall++  
 }
-if ((q4_norm === "no") || (q4_norm === "n")){
+if ((question4 === "no") || (question4 === "n")){
     overall++  
 }
-if ((q5_norm === "yes") || (q5_norm === "y")){
+if ((question5 === "yes") || (question5 === "y")){
     overall++  
 }
 
