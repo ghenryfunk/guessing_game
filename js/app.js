@@ -5,16 +5,19 @@ var overall = 0
 var name = prompt("Hello, what is your name?");
 alert("Welcome " + name + ", this is my \'About Me\' webpage");
 
-var q1 = prompt("Hello " + name + ", do you know if James likes to code? Please enter either yes/no or y/n");
-var q1_norm = q1.toLowerCase()
-if ((q1_norm === "y" ) || (q1_norm === "n")||(q1_norm === "yes")||(q1_norm === "no")){
-    //console.log(q1_norm);
-    alert("thank you for your response of : " + q1_norm);
-} else{
-    //console.log(q1 + " is an unacceptable response.");
-    alert(q1 + " is an unacceptable response, goodbye!");
-    end;
+function q1() {
+    var q1 = prompt("Hello " + name + ", do you know if James likes to code? Please enter either yes/no or y/n");
+    var q1_norm = q1.toLowerCase()
+    if ((q1_norm === "y" ) || (q1_norm === "n")||(q1_norm === "yes")||(q1_norm === "no")){
+        //console.log(q1_norm);
+        alert("thank you for your response of : " + q1_norm);
+    } else{
+        //console.log(q1 + " is an unacceptable response.");
+        alert(q1 + " is an unacceptable response, goodbye!");
+        end;
+    }
 }
+var question1 = q1();
 
 var q2 = prompt("Hello " + name + ", does James have kids? Please enter either yes/no or y/n");
 var q2_norm = q2.toLowerCase()
