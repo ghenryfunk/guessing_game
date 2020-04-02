@@ -19,16 +19,19 @@ function q1() {
 }
 var question1 = q1();
 
-var q2 = prompt("Hello " + name + ", does James have kids? Please enter either yes/no or y/n");
-var q2_norm = q2.toLowerCase()
-if ((q2_norm === "y" ) || (q2_norm === "n")||(q2_norm === "yes")||(q2_norm === "no")){
-    //console.log(q2_norm);
-    alert(q2_norm + " is an acceptable response");
-} else{
-    //console.log(q2 + " is an unacceptable response.");
-    alert(q2 + " is an unacceptable response, goodbye!");
-    end;
+function q2() {
+    var q2 = prompt("Hello " + name + ", does James have kids? Please enter either yes/no or y/n");
+    var q2_norm = q2.toLowerCase()
+    if ((q2_norm === "y" ) || (q2_norm === "n")||(q2_norm === "yes")||(q2_norm === "no")){
+        //console.log(q2_norm);
+        alert(q2_norm + " is an acceptable response");
+    } else{
+        //console.log(q2 + " is an unacceptable response.");
+        alert(q2 + " is an unacceptable response, goodbye!");
+        end;
+    }
 }
+var question2 = q2();
 
 var q3 = prompt("Hello " + name + ", does James live in Seattle? Please enter either yes/no or y/n");
 var q3_norm = q3.toLowerCase()
