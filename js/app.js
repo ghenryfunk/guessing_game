@@ -168,7 +168,7 @@ if ((question5 === "yes") || (question5 === "y")){
     overall++  
 }
 
-if((cities === "Seattle") || (cities === "Ann Arbor") || (cities === "Washington DC")){
+if((question7 === "Seattle") || (question7 === "Ann Arbor") || (question7 === "Washington DC")){
     alert("Thank you " + name + ", for your responses and playing the guessing games! You got " + overall + " questions right!");
 }else {
         alert("Sorry, you have exceeded the max number of guesses, the possibles answers were: " + correct[0]+ ", " + correct[1] + ", " + correct[2])
