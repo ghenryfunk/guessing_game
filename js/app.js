@@ -113,41 +113,42 @@ var question6 = q6();
 //declare possible correct answers in array
 var correct = ["Seattle", "Ann Arbor", "Washington DC"];
 
-
-for (var a = 0; a<6; a++){
-    var cities = prompt("Hello " + name + ", please guess one of the different cities that I have lived in the last 10 years?");
-    console.log(cities)
-    console.log(a);
-    var index = 0;
-
-    // while loop that iterates through every possible correct answers
-    while (index < correct.length){
-        //for loop that does the compares input to possible correct answer
-        for (var i =0; i<3; i++){   
-        console.log("i " + i )
-        //comparison logic 
-        if (cities === correct[i]){
-            console.log("correct answer")
-            alert("Great guess, that is correct!");
-            //if input is correct, "index" set to 4 to exit out of iterating through correct answers, "a" set to 6 to stop from asking for anymore guesses
-            overall++
-            index = 4
-            a = 6
-            break ;
-            
-            //if input is incorrect, check to see if all possible correct answers has been compared, if not ask user to try again
-            } else {
-                if (i==2){
-                alert ("Sorry try again")
-                break;
-                } else{
-                    }    
+function q7() {
+    for (var a = 0; a<6; a++){
+        var cities = prompt("Hello " + name + ", please guess one of the different cities that I have lived in the last 10 years?");
+        console.log(cities)
+        console.log(a);
+        var index = 0;
+    
+        // while loop that iterates through every possible correct answers
+        while (index < correct.length){
+            //for loop that does the compares input to possible correct answer
+            for (var i =0; i<3; i++){   
+            console.log("i " + i )
+            //comparison logic 
+            if (cities === correct[i]){
+                console.log("correct answer")
+                alert("Great guess, that is correct!");
+                //if input is correct, "index" set to 4 to exit out of iterating through correct answers, "a" set to 6 to stop from asking for anymore guesses
+                overall++
                 index = 4
-                } 
-        }       
-    }   
+                a = 6
+                break ;
+                
+                //if input is incorrect, check to see if all possible correct answers has been compared, if not ask user to try again
+                } else {
+                    if (i==2){
+                    alert ("Sorry try again")
+                    break;
+                    } else{
+                        }    
+                    index = 4
+                    } 
+            }       
+        }   
+    }
 }
-
+var question7 = q7();
 
 
 // calculate the number of correct answers out of the seven questions asked
