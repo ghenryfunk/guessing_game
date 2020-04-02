@@ -61,16 +61,19 @@ function q4() {
 }
 var question4 = q4();
 
-var q5 = prompt("Hello " + name + ", does James work at Amazon? Please enter either yes/no or y/n");
-var q5_norm = q5.toLowerCase()
-if ((q5_norm === "y" ) || (q5_norm === "n")||(q5_norm === "yes")||(q5_norm === "no")){
-    //console.log(q5_norm);
-    alert(q5_norm + " is an acceptable response");
-} else{
-    //console.log(q5 + " is an unacceptable response.");
-    alert(q5 + " is an unacceptable response, goodbye!");
-    end;
+function q5() {
+    var q5 = prompt("Hello " + name + ", does James work at Amazon? Please enter either yes/no or y/n");
+    var q5_norm = q5.toLowerCase()
+    if ((q5_norm === "y" ) || (q5_norm === "n")||(q5_norm === "yes")||(q5_norm === "no")){
+        //console.log(q5_norm);
+        alert(q5_norm + " is an acceptable response");
+    } else{
+        //console.log(q5 + " is an unacceptable response.");
+        alert(q5 + " is an unacceptable response, goodbye!");
+        end;
+    }
 }
+var question5 = q5();
 
 
 //loop with 4 tries only to guess a number
